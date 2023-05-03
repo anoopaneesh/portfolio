@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .wrapper {
+    @apply px-6 sm:px-16;
+  }
+}
+
 *,
 *::after,
 *::before {

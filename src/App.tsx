@@ -4,12 +4,13 @@ import {
     Route
 } from "react-router-dom";
 import { About, Contact, Home, Works } from "./screens";
-import { Navbar } from "./components";
+import { Hero, Navbar } from "./components";
 
 const App = () => {
     return (
         <BrowserRouter>
             <Navbar />
+            <Hero />
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
