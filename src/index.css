@@ -5,7 +5,7 @@
 
 @layer components {
   .wrapper {
-    @apply px-6 sm:px-16;
+    @apply px-6 sm:px-16 md:px-32 lg:px-64;
   }
 }
 

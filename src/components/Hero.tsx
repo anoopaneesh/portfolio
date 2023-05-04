@@ -15,23 +15,25 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="absolute inset-0 w-full h-screen -translate-y-8">
+            <div className="absolute inset-0 w-full -translate-y-8 ">
                 <ComputerCanvas />
-                <div className="absolute flex justify-center py-2 w-[30px] h-[56px] left-1/2 -translate-x-1/2 bottom-[75px] rounded-full border-4 border-secondary">
-                    <motion.div
-                        className="w-2 h-2 bg-secondary rounded-full"
+                <a href="#about">
+                    <div className="cursor-pointer absolute flex justify-center py-2 w-[30px] h-[56px] left-1/2 -translate-x-1/2 top-[490px] sm:top-[590px] rounded-full border-4 border-secondary">
+                        <motion.div
+                            className="w-2 h-2 bg-secondary rounded-full"
 
-                        animate={{
-                            y: [0, 24, 0],
-                        }}
+                            animate={{
+                                y: [0, 24, 0],
+                            }}
 
-                        transition={{
-                            duration: 3,
-                            repeatType: 'loop',
-                            repeat: Infinity
-                        }}
-                    />
-                </div>
+                            transition={{
+                                duration: 3,
+                                repeatType: 'loop',
+                                repeat: Infinity
+                            }}
+                        />
+                    </div>
+                </a>
             </div>
 
         </div>
