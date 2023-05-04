@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
 import Hero from "./Hero";
+import ComputerCanvas from "./ComputerCanvas";
 
-export {Navbar,Hero}
+export {Navbar,Hero,ComputerCanvas}

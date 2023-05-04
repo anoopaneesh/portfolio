@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom'
-import logo from '../assets/logo.svg'
-import menu from '../assets/menu.svg'
-import close from '../assets/close.svg'
+import logo from '../assets/images/logo.svg'
+import menu from '../assets/images/menu.svg'
+import close from '../assets/images/close.svg'
 import { useState } from 'react'
 const Navbar = () => {
     const { currentRoute, menuActive, setCurrentRoute, routes, setMenuActive } = useNavbarProps()
@@ -13,16 +12,16 @@ const Navbar = () => {
                 <p className='font-bold'>Anoop | Fullstack Developer</p>
             </div>
             <div className='hidden sm:flex items-center gap-10'>
-                {routes.map(route => <Link className={`${currentRoute === route.path ? 'text-white' : 'text-secondary'} hover:text-white`} key={route.path} to={route.path} onClick={() => {
+                {routes.map(route => <a className={`${currentRoute === route.path ? 'text-white' : 'text-secondary'} hover:text-white`} key={route.path} href={route.path} onClick={() => {
                     setCurrentRoute(route.path)
-                }}>{route.name}</Link>)}
+                }}>{route.name}</a>)}
             </div>
             <img src={menuActive ? close : menu} alt="navbar menu" className='w-[20px] h-[20px] block sm:hidden cursor-pointer' onClick={() => setMenuActive((state) => !state)} />
             <div className={`${menuActive ? 'flex' : 'hidden'} sm:hidden flex-col gap-8 absolute top-[80px] right-6 items-end bg-gradient-to-r from-cyan-600 to-blue-900 px-8 py-6 rounded`}>
-                {routes.map(route => <Link className={`${currentRoute === route.path ? 'text-white' : 'text-secondary'} hover:text-white`} key={route.path} to={route.path} onClick={() => {
+                {routes.map(route => <a className={`${currentRoute === route.path ? 'text-white' : 'text-secondary'} hover:text-white`} key={route.path} href={route.path} onClick={() => {
                     setMenuActive(false)
                     setCurrentRoute(route.path)
-                }}>{route.name}</Link>)}
+                }}>{route.name}</a>)}
             </div>
         </div>
     )
@@ -31,19 +30,15 @@ const Navbar = () => {
 const useNavbarProps = () => {
     const routes = [
         {
-            path: '/',
-            name: 'Home'
-        },
-        {
-            path: '/about',
+            path: '#about',
             name: 'About'
         },
         {
-            path: '/works',
+            path: '#works',
             name: 'Works'
         },
         {
-            path: '/contact',
+            path: '#contact',
             name: 'Contact'
         }
     ]
