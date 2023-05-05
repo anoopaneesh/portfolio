@@ -14,6 +14,23 @@ const textVariant: Variants = {
         }
     },
 }
+
+
+const contactVariants : Variants = {
+    initial:{
+        translateX:-100,
+        opacity:0
+    },
+    animate:{
+        translateX:0,
+        opacity:1,
+        transition:{
+            duration:1.5,
+            type:'spring'
+        }
+    }
+}
+
 const containerVariant: Variants = {
     initial: {
         opacity: 0
@@ -41,4 +58,4 @@ const tiltCardVariants: Variants = {
     }
 }
 
-export { textVariant, containerVariant, tiltCardVariants }
+export { textVariant, containerVariant, tiltCardVariants,contactVariants }

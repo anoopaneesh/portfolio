@@ -18,8 +18,11 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+  color:white;
+  
 }
 
 body {
   font-size: 16px;
+  background: #050816;
 }

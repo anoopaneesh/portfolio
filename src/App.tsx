@@ -1,4 +1,4 @@
-import { About, Contact, Experiences, Hero, Navbar, Projects, SectionWrapper, Skills } from "./components";
+import { About, Contact, Experiences, Hero, Navbar, Projects, SectionWrapper, Skills, StarCanvas } from "./components";
 
 const App = () => {
     return (
@@ -17,9 +17,12 @@ const App = () => {
             <SectionWrapper id="works">
                 <Projects />
             </SectionWrapper>
-            <SectionWrapper id="works">
-                <Contact />
-            </SectionWrapper>
+            <div className="relative z-0">
+                <SectionWrapper id="contact">
+                    <Contact />
+                </SectionWrapper>
+                <StarCanvas />
+            </div>
         </div>
     )
 }

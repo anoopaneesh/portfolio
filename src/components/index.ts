@@ -6,5 +6,7 @@ import Experiences from "./Experiences";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import StarCanvas from "./StarCanvas";
 
-export { Navbar, Hero, About, SectionWrapper, Experiences, Skills, Projects,Contact}
+
+export { Navbar, Hero, About, SectionWrapper, Experiences, Skills, Projects,Contact,StarCanvas}
