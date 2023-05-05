@@ -2,6 +2,7 @@
 import { Suspense, useEffect, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Html, OrbitControls, Preload, useGLTF, useProgress } from '@react-three/drei'
+import CanvasLoader from './CanvasLoader'
 
 const ComputerCanvas = () => {
   const [isMobile, setIsMobile] = useState(false)
@@ -56,13 +57,5 @@ const Computer: React.FC<ComputerProps> = ({ isMobile }) => {
   )
 }
 
-const CanvasLoader = () => {
-  const { progress } = useProgress()
-  return (
-    <Html>
-      <p className='p-2 font-bold'>{progress.toFixed(2)}%</p>
-    </Html>
-  )
-}
 
 export default ComputerCanvas
