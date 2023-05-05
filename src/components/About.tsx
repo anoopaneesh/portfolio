@@ -1,10 +1,8 @@
 import { Tilt } from "react-tilt"
-import fullstack from '../assets/images/web.png'
-import mobile from '../assets/images/mobile.png'
 import { textVariant, tiltCardVariants } from '../utils/motion'
 import { motion } from 'framer-motion'
+import { services } from "../data"
 const About = () => {
-    const { services } = useAboutProps()
     return (
         <>
             <motion.div
@@ -32,20 +30,5 @@ const About = () => {
     )
 }
 
-
-const useAboutProps = () => {
-
-    const services = [
-        {
-            name: 'Full-Stack Developer',
-            icon: fullstack
-        },
-        {
-            name: 'Mobile Developer',
-            icon: mobile
-        }
-    ]
-    return { services }
-}
 
 export default About
