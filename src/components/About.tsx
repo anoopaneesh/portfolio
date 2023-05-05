@@ -12,7 +12,7 @@ const About = () => {
                 <h2 className="text-[28px] md:text-[38px] lg:text-[58px] font-bold">Overview.</h2>
                 <p className="text-secondary leading-relaxed">I'm a skilled full-stack developer with experience in JavaScript , React , NodeJS , ExpressJS, MongoDB and more.I'm a quick learner and collaborte closely with clients to create efficient scalable,and user-friendly solutions that solve real-world problems.Let's work together to bring your ideas to life!</p>
             </motion.div>
-            <div className="flex gap-4 mt-8">
+            <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 {services.map((service, index) => <Tilt key={index} options={{ scale: 1 }}>
 
                     <motion.div

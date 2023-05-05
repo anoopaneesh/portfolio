@@ -18,7 +18,7 @@ const Hero = () => {
             <div className="absolute inset-0 w-full -translate-y-8 ">
                 <ComputerCanvas />
                 <a href="#about">
-                    <div className="cursor-pointer absolute flex justify-center py-2 w-[30px] h-[56px] left-1/2 -translate-x-1/2 top-[490px] sm:top-[590px] rounded-full border-4 border-secondary">
+                    <div className="cursor-pointer absolute flex justify-center py-2 w-[30px] h-[56px] left-1/2 -translate-x-1/2 top-[80vh] rounded-full border-4 border-secondary">
                         <motion.div
                             className="w-2 h-2 bg-secondary rounded-full"
 

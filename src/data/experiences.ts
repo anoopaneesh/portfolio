@@ -13,7 +13,7 @@ export const experiences = [
             "Created a web based interview platform using NodeJS",
             "Worked on a frontend of social media platform for professionals to find potential opportunities using PHP",
             "Handled the deployment of websites and APIs of emotion detection , nlp using the AWS",
-            "Used NodeJS,ExpressJS,MySQL,Nodemailer,AWS EC2,S3,RDS,Nginx"
+            "Used NodeJS,ExpressJS,MySQL, Nodemailer,AWS EC2,S3,RDS,Nginx"
         ],
         skills: ["NodeJS", "ExpressJS", "MySQL", "AWS", "Nginx", "PHP"],
         certificate_link: "https://drive.google.com/file/d/1Dh7BzEFkDhxBy7vmaqejg2VYsi6_AJuR/view?usp=sharing",
