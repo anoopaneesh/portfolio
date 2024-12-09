@@ -17,6 +17,7 @@ const Navbar = () => {
                 {routes.map(route => <a className='text-secondary hover:text-white select-none' key={route.path} href={route.path} onClick={() => {
 
                 }}>{route.name}</a>)}
+                <a className='text-secondary hover:text-white select-none' href='./resume.pdf' target='_blank'>Resume</a>
             </div>
             <img src={menuActive ? close : menu} alt="navbar menu" className='w-[20px] h-[20px] block sm:hidden cursor-pointer' onClick={() => setMenuActive((state) => !state)} />
             <div className={`${menuActive ? 'flex' : 'hidden'} sm:hidden flex-col gap-8 absolute top-[80px] right-6 items-end bg-gradient-to-r from-cyan-600 to-blue-900 px-8 py-6 rounded`}>

@@ -42,9 +42,9 @@ const Contact = () => {
             console.log(err)
             toast({
                 position: 'bottom',
-                duration: 2000,
+                duration: 10000,
                 render: () => (
-                    <ToastContainer title='Email was not sent' description='Something went wrong' type='error' />
+                    <ToastContainer title='Email was not sent' description='Please sent the mail at < pk.anoop@outlook.com >' type='error' />
                 ),
             })
         }).finally(() => {

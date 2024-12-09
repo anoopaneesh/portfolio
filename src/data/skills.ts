@@ -5,6 +5,8 @@ import html from '../assets/images/tech/html.png'
 import css from '../assets/images/tech/css.png'
 import javascript from '../assets/images/tech/javascript.png'
 import typescript from '../assets/images/tech/typescript.png'
+import nestjs from "../assets/images/tech/nestjs.jpeg";
+import aws from "../assets/images/tech/aws.png";
 
 import redux from '../assets/images/tech/redux.png'
 import git from '../assets/images/tech/git.png'
@@ -51,6 +53,14 @@ export const skills = [
         name: "JavaScript",
         icon: javascript
     },
+    {
+        name:"NestJS",
+        icon:nestjs
+    },
+    {
+        name:"AWS",
+        icon:aws
+    }
 
 
 

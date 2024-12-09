@@ -28,7 +28,7 @@ const Experiences = () => {
                         date={`${experience.startDate} - ${experience.endDate}`}
                         iconStyle={{ background: '#343991', }}
                         icon={
-                            <img className='rounded-full' src="/companies/unokard.jpeg" alt="" />
+                            <img className='rounded-full' src={experience.company_logo} alt="" />
                         }
                     >
                         <h3 className='font-bold tracking-wide'><a className='hover:underline' href={experience.certificate_link} target="_blank"><span>{experience.title}</span></a>&nbsp;@&nbsp;<a className='hover:underline' href={experience.company_website} target='_blank'><span>{experience.company_name}</span></a></h3>
